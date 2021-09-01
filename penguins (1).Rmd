@@ -1,0 +1,40 @@
+---
+title: "Penguins"
+author: "Nick Stugard"
+date: "9/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+The are thousands of packages available publicly for the programming language R.  Packages include datasets and functions developed by members of the R community.  We will install and load the package `palmerpenguins` and then do some preliminary inspections of the dataset included.
+
+### Packages
+The first thing we typically need to do with all R projects is to install and load the packages we are going to use.  We use three tick marks to chuck our code into parts to parts to run at one time.  You only need to **install** packages the first time using RStudio, but you will need to **load** the library packages each time you start a new project.
+
+#### Install and Load Packages
+```{r install packages, warning=FALSE, message=FALSE}
+install.packages("tidyverse")
+install.packages("palmerpenguins")
+library(tidyverse)
+library(palmerpenguins)
+```
+
+### Explore the Data
+
+Once everything is loaded, we can begin to explore it.  The data set we will look at is called `penguins`.
+We want to determine the size and some basic characteristics of the data set.  We want to:
+
+*	Read the description of the data set: `?penguins`
+* Look at the first six rows:`head(penguins)`
+*	Determine the number of observations:`nrow(penguins)`
+*	Determine the number of variables:`ncol(penguins)`
+*	Determine how the variables are stored:`glimpse(penguins)`
+
+### Summary
+
+Now that we have an idea of what is in the data, we can begin to think about appropriate ways to analyze it.  There are --- observations in the data set.  Some of the interesting variables we could begin to explore would be ---.  We could ---
+
